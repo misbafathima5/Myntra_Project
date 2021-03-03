@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Roboto&display=swap');
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+    font-family: Catamaran,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    
+}
+
+#headerBlock {
+    width: 100%;
+    background-color: #fff;
+    
+}
+
+#headerBlock > article{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
+.leftBlock{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.logoBlock img{
+    width: 50px;
+    height: 50px;
+    line-height: 80px;
+    position: relative;
+    left: 50px;
+}
+.logoBlock{
+    width: 20%;
+      
+}
+.leftMenuBlock{
+    width: 80%;
+    
+}
+.leftMenuBlock > ul{
+    list-style: none;
+    display: flex;
+    
+}
+.leftMenuBlock ul li a{
+    text-decoration: none;
+    color: #282c3f;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px;
+    
+}
+
+
+.rightBlock{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.searchBlock{
+    width: 70%;
+}
+.rightMenuBlock{
+    width: 30%;
+}
+.rightMenuBlock ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.rightMenuBlock ul li a{
+   text-decoration: none;
+   padding: 10px 60px;
+   color: #111;
+   font-weight: bold;
+   
+}
+
+.searchBlock input{
+    width: 80%;
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    padding: 12px 50px;
+    margin-left: 50px;
+   
+}
+.searchBlock input:hover{
+    background-color: white;
+    border: 1px solid grey;
+}
+
+.searchBlock span{
+    position: relative;
+}
+
+.searchBlock span i {
+    position: absolute;
+    top: 6px;
+    right:-78px;
+    color:grey;
+}
+
+
+/* INVITE BLOCK STARTS HERE*/
+
+#inviteBlock{
+    background: linear-gradient(90deg, #f9f9ff, #dee8ff);
+    width: 100%;
+    height: 50px;
+}
+
+#inviteBlock article{
+    display: flex;
+    height: 53.992px;
+    align-items: center;
+    justify-content: center;
+}
+
+#inviteBlock article img{
+    width: 60px;
+}
+#inviteBlock article p{
+    font-size: 14px;
+    margin: 0 20px;
+    color: #111;
+    font-weight: bold;
+    line-height: 20px;
+    
+}
+
+#inviteBlock article button{
+    background: transparent;
+    border: 1px solid #c9dafd;
+    border-radius: 2px;
+    padding: 5px 20px;
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/* Offer Block Starts here*/
+#offerBlock article{
+    display: flex;
+    height: auto;
+    width: 100%;
+    
+}
+.leftOfferBlock{
+    width: 25%; 
+}
+.middleOfferBlock{
+    width: 50%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+.middleOfferBlock img{
+    width: 100%;
+}
+
+.rightOfferBlock{
+    width: 25%;   
+}
+
+#offerBlock img{
+    width: 100%;
+}
+.leftOfferBlock div, .rightOfferBlock div {
+    height: 105px;
+}
+
+.offerdiv1, .offerdiv2, .offerdiv3{
+    display: flex;
+    width: 50%;
+    
+}
+
+/*DROPDOWN IN NAVBAR STARTS HERE*/
+#dropdown article{
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    height: 520px;
+    display: flex;
+    position: absolute;
+    top: 75px;
+    left: 70px;
+    
+}
+#dropdown{
+    display: none;
+}
+
+.leftMenuBlock ul li:hover > #dropdown{
+    display: block;
+    
+}
+#dropdown article div{
+    flex: 1;
+    padding-top:12px;
+    padding-left: 12px;
+}
+
+#dropdown article div:nth-of-type(5){
+    flex-basis: 100px;
+}
+#dropdown article div:nth-of-type(2){
+    flex-basis: 60px;
+}
+#dropdown article div:nth-of-type(3){
+    flex-basis: 60px;
+}
+#dropdown article div:nth-child(odd){
+    background-color: white;
+}
+#dropdown article div:nth-child(even){
+    background-color: rgb(252, 252, 252);
+}
+
+#dropdown article div ul{
+    list-style: none;
+    font-size:12px;
+    margin-top: 15px;
+   
+}
+#dropdown article div ul li:nth-child(1) a{
+    color:red;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 20px 20px;
+}
+#dropdown article div ul li{
+    margin-top: 2px;
+}
+#dropdown article div ul li a{
+   text-transform: none;
+   color: black;
+   font-size: 15px;
+}
+#dropdown article div ul li a:hover{
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+#dropdown article div ul li:nth-child(1) a:hover{
+    color: hotpink;
+    font-weight: bold;
+    font-size: 15px;
+}
+hr{
+    margin:15px 20px;
+    
+}
+/*DROPDOWN IN NAVBAR ENDS HERE*/
+
+/*DROPDOWN IN WOMEN STARTS HERE*/
+#dropdown .womendrop div:nth-of-type(1){
+    flex-basis: 100px;
+   
+}
+#dropdown .womendrop div:nth-of-type(5){
+    flex-basis: 70px;
+}
+#dropdown .womendrop div:nth-of-type(4){
+    flex-basis: 70px;
+}
+#dropdown .womendrop div ul li:nth-child(1) a{
+    color: hotpink;
+}
+#dropdown .womendrop div ul li:nth-child(1) a:hover{
+    color: hotpink;
+}
+/*DROPDOWN IN WOMEN ENDS HERE*/
+
+/*KIDS DROPDOWN STARTS HERE*/
+#dropdown .kidsdrop div:nth-of-type(1){
+    flex-basis: 70px;
+}
+#dropdown .kidsdrop div:nth-of-type(4){
+    flex-basis: 70px;
+}
+#dropdown .kidsdrop div:nth-of-type(5){
+    flex-basis: 70px;
+}
+#dropdown .kidsdrop div:nth-of-type(3){
+    flex-basis: 30px;
+}
+#dropdown .kidsdrop div ul li:nth-child(1) a{
+    color: orangered;
+}
+#dropdown .kidsdrop div ul li:nth-child(1) a:hover{
+    color: orangered;
+}
+/*KIDS DROPDOWN ENDS HERE*/
+
+
+/*HOME & LIVING DROPDOWN STARTS HERE*/
+#dropdown .homedrop div:nth-of-type(5){
+    flex-basis: 20px;
+}
+#dropdown .homedrop div:nth-of-type(4){
+    flex-basis: 50px;
+}
+#dropdown .homedrop div:nth-of-type(2){
+    flex-basis: 20px;
+}
+#dropdown .homedrop div ul li:nth-child(1) a{
+    color: darkorange;
+}
+#dropdown .homedrop div ul li:nth-child(1) a:hover{
+    color: darkorange;
+}
+/*HOME & LIVING DROPDOWN ENDS HERE*/
+
+/*OFFERS DROPDOWN STARTS HERE*/
+#dropdown .offerdrop div ul li:nth-child(1) a{
+    color:rgb(0, 184, 197) ;
+    font-size: 15px;
+}
+#dropdown .offerdrop div ul li:nth-child(1) a:hover{
+    color: rgb(0, 184, 197);
+    font-size: 15px;
+}
+#dropdown .offerdrop div:nth-of-type(1){
+    flex-basis: 100px;
+}
+#dropdown .offerdrop div:nth-of-type(2){
+    flex-basis: 60px;
+}
+#dropdown .offerdrop div:nth-of-type(4){
+    background-color: white;
+}
+/*OFFERS DROPDOWN ENDS HERE*/
+
+/*PROFILE DROPDOWN STARTS HERE*/
+#profileDropdown .profileDropdown{
+background-color: white;
+height: 450px;
+width: 350px;
+position: absolute;
+top:78px;
+right:20px;
+}
+
+.profileDropdown div h1{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.profileDropdown div p{
+    margin-left: 30px;
+    display: flex;
+    font-size: 15px;
+}
+.profileDropdown div button{
+    display: flex;
+    margin-left: 30px ;
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    border:0.5px solid grey;
+    border-radius: 2px;
+}
+.profileDropdown div button:hover{
+    border: 1px solid rgb(247, 93, 119);
+}
+.profileDropdown div button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40px;
+    font-size: 13px;
+    padding: 10px 20px;
+    color: rgb(247, 93, 119);
+    font-weight: bold;
+}
+.profileDropdown div ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.profileDropdown .profilelist1 ul{
+  justify-content: flex-start;
+  margin-left: -30px;
+  
+}
+.profileDropdown .profilelist1{
+    display: flex;
+}
+.profileDropdown ul li a{
+    font-weight: 400;
+    font-size: medium;
+}
+.profileDropdown ul li a:hover{
+    font-weight: bold;
+}
+.profilelist1 img{
+    position: relative;
+    left: -50px;
+    top: 7px;
+
+}
+#profileDropdown{
+    display: none;
+}
+.rightMenuBlock ul li:hover > #profileDropdown{
+    display: block;
+}
+/*PROFILE DROPDOWN ENDS HERE*/
+
+
+/*DISCOUNT BLOCK STARTS HERE*/
+#discount{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+#discount .discount img{
+    width: 100%;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+/*DISCOUNT BLOCK ENDS HERE*/
+
+/*DEALZONE STARTS HERE*/
+.dealzone{
+    background-color: white;
+    height: 59.72px;
+}
+.dealzone img{
+    width: 100%;
+}
+
+#dealzone{
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    padding-top: 0;
+    
+}
+#dealzone article{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#dealzone article img{
+    width: 100%;
+}
+#dealzone article div{
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+/*DEALZONE ENDS HERE*/
+#bestselling{
+    width:100%;
+    background-color: white;
+}
+#bestselling img{
+    width:100%;
+}
+#bestselling .row1{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex: 1;
+}
+#bestselling div{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#bigbrand img, #topcat img{
+    width: 100%;
+}
+#bigbrand, #topcat{
+    background-color: white;
+}
+#bigbrand article, #topcat article{
+    
+    width: 90%;
+    margin: 0 auto;
+}
+.ad3 img{
+    margin-top: -9px;
+}
+
+footer{
+    padding: 30px 0px 40px 0px;
+    background: #FAFBFC;
+    width: 100%;
+    position: relative;
+}
+footer .part1{
+    display: flex;
+    width: 90%;
+    margin:0 auto ;
+    padding-top: 10px;
+}
+footer .part1 a{
+    text-decoration: none;
+    color: #282c3f;
+}
+footer .part1 ul li{
+    list-style: none;
+}
+
+footer .part1 p a{
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+}
+footer .part1 p{
+    margin-bottom: 15px;
+}
+.applogocontainer{
+    display: flex;
+}
+.applogocontainer img{
+    width: 140px;
+    height: 42px;
+    margin-right: 10px;
+}
+.appiconcontainer img{
+    width: 22px;
+    height: 21px;
+    margin-right: 10px;
+}
+.original{
+    display: flex;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.original img{
+    width: 50px;
+    height: 42px;
+}
+.online{
+    flex-basis: 220px;
+    margin-left: 10px;
+}
+.app{
+    margin-left: 70px;
+}
+.last{
+    margin-left: 90px;
+}
+footer hr{
+    border: 1px;
+    height: 1px;
+    background-color: #eaeaec;
+    margin: 0 100px;
+}
+.mostSearched{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.mostSearched a::after{
+    content: " | ";
+    margin-left: 3px;
+    height: 5px;
+}
+.mostSearched a:last-child::after{
+    content: " ";
+}
+.mostSearched a{
+    text-decoration: none;
+    color: grey;
+    font-size: 16px;
+}
+.lastSearched{
+    display: flex;
+    width:90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: grey;
+}
+.lastSearched div:nth-child(1){
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
